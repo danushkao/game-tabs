@@ -1,0 +1,165 @@
+@import "normalize";
+@import "layout";
+@import "slick";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:900');
+
+
+$color: #b7bacd;
+$second-color: #fbfbfb;
+
+
+body{
+	background:  url('../img/bg.jpg') 50%;
+	background-size: cover;
+	font: 400 14px/1.6 'Lato', sans-serif;
+	color: $color;
+	padding-top: 146px;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	border-radius: 2px;
+	background-color:  #13e28d;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 35px;
+	margin-top: 15px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	&:focus {
+
+	}
+}
+
+main {
+	background-color:  #212534;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.ba-game__title {
+	color: #FFF;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+}
+.ba-game {
+	background-color:  #2b3040;
+}
+.ba-game__menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+}
+
+
+.ba-tab {
+	width: 30%;
+	text-align: center;
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+	color: $color;
+}
+.ba-tab:hover {
+	border-bottom: 2px solid $second-color;
+}
+.ba-tab.active {
+	color: $second-color;
+	border-bottom: 2px solid $second-color;
+}
+.ba-tab a {
+	color: currentColor;
+	text-decoration: none;
+	display: block;
+	padding: 33px 0 27px;
+}
+svg {
+	fill: currentColor;
+}
+.ba-game__title {
+	margin: 0;
+	font-size: 16px;
+}
+.ba-game-img {
+	float: left;
+	width: 40%;
+	padding: 59px 0 50px 12px;
+	text-align: center;
+}
+.ba-game-img img {
+	display: block;
+	margin: 0 auto 25px
+}
+
+.ba-star {
+	fill: #ffdd3f;
+	margin-right: 5px;
+}
+.ba-game-information {
+	float: right;
+	width: 60%;
+	padding: 60px 41px 62px 6px;
+	position: relative;
+}
+.ba-rating {
+	position: absolute;
+	top: 57px;
+	right: 42px;
+}
+.ba-game__subtitle {
+	color: $second-color;
+	margin: 0 0 33px;
+}
+
+.ba-buy {
+	margin-top: 57px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ba-discount {
+	color:  #fedd3f;
+	display: block;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.ba-price {
+	color: #FFF;
+	display: block;
+	font-size: 32px;
+	line-height: 1.2;
+	margin-top: 2px;
+}
